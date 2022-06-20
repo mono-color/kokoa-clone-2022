@@ -9,7 +9,33 @@
 }
 .icon-row__icon i {
   font-size: 35px;
+  position: relative;
 }
 .icon-row__icon span {
   margin-top: 18px;
+}
+.icon-row__alert {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -11px;
+  top: -27px;
+}
+
+@keyframes sizeUp {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.icon-row__icon i:hover {
+  animation: sizeUp 0.1s linear forwards;
 }
