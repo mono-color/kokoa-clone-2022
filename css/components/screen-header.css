@@ -27,3 +27,25 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 1s linear infinite;
 }
+
+@keyframes upAndDown {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: upAndDown 1s linear infinite;
+}
